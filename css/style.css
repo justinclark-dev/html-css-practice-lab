@@ -338,4 +338,99 @@ a span.carrot {
     width: 280px;
     height: 64px;
 }
+/************************************/
+/* Social Proof Section */
+.figma-container:has(> .social) {
+    /*
+    parentSelector:has(> childSelector)
+    https://developer.mozilla.org/en-US/docs/Web/CSS/:has
+    */
+    background-color: #fff;
+}
+#social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
 
+}
+#social .social {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    width: 100%;
+}
+#social .subtitle {
+    font-size: 1.5em;
+    margin-top: 1.6em;
+    margin-bottom: 1.8em;
+}
+#social .logos {
+    width: 680px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#social .logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+#social-1 {
+    height: 268px;
+}
+/************************************/
+#social-2 {
+    height: 379px;
+    justify-content: center;
+}
+#social-2 .title {
+    font-size: 1.5em;
+}
+#social-2 .subtitle {
+    font-size: 1.2em;
+    margin-top: 2em;
+    margin-bottom: 4em; 
+    width: 619px;
+    align-self: center;
+}
+#social-2 .logos {
+    width: 908px;
+    height: 40px;
+}
+#social-2 .logo {
+    height: 40px;
+    width: 120px;
+    border-radius: 0;
+}
+/************************************/
+#social-3 {
+    height: 400px;
+    justify-content: center;
+}
+#social-3 .title {
+    font-size: 1.5em;
+}
+#social-3 .subtitle {
+    font-size: 1.2em;
+}
+#social-3 .logos {
+    width: 908px;
+    height: 40px;
+    width: 80px;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em; 
+}
+/************************************/
+.section,
+#buttons-and-cards,
+#navigation,
+#hero,
+#social 
+{
+    /* display: none; */
+}
