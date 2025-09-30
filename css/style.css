@@ -135,3 +135,101 @@ a span.carrot {
    font-weight: 400;
    font-size: 1em;
 }
+/************************************/
+/* Navigation */
+#navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+}
+
+#navigation nav {
+    background-color: #fff;
+    display: flex;
+    height: 64px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+#navigation nav * {
+    align-self: center;
+    
+}
+#navigation nav .logo {
+    font-weight: 700; 
+}
+#navigation nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding: 0;
+}
+
+
+#navigation nav ul li {
+    /* outline: 1px black solid; */
+}
+
+#navigation nav button {
+    width: 140px;
+}
+/************************************/
+#navigation nav#nav-2 .logo {
+    flex-grow: 0;
+}
+#navigation nav#nav-2 ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+#navigation nav#nav-2 button {
+    flex-grow: 0;
+}
+/************************************/
+#navigation nav#nav-3 .logo {
+    flex-grow: 0;
+}
+#navigation nav#nav-3 div {
+    flex-grow: 1;
+    display: flex;
+}
+#navigation nav#nav-3 button {
+    flex-grow: 0;
+}
+
+
+#navigation nav#nav-3 div ul#ul-1 {
+    flex-grow: 1;
+    margin-left: 40px;
+}
+#navigation nav#nav-3 div ul#ul-2 {
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+/************************************/
+#navigation nav#nav-4 ul {
+    flex-grow: 1;
+    width: 33%;
+}
+#navigation nav#nav-4 .logo {
+    flex-grow: 1;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+}
+#navigation nav#nav-4 #left-btn-container {
+    flex-grow: 1;
+    width: 33%;
+    justify-content: flex-end;
+    display: flex;
+}
+#navigation nav#nav-4 #left-btn-container button {
+    justify-content: flex-end;
+}
+
