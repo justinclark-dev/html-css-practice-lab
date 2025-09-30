@@ -232,4 +232,110 @@ a span.carrot {
 #navigation nav#nav-4 #left-btn-container button {
     justify-content: flex-end;
 }
+/************************************/
+/* Hero Section */
+.figma-container:has(> .hero) {
+    /*
+    parentSelector:has(> childSelector)
+    https://developer.mozilla.org/en-US/docs/Web/CSS/:has
+    */
+    background-color: #fff;
+}
+.hero {
+    display: flex;
+    justify-content: space-around;
+    height: 700px;
+    gap: 20px;
+    background-color: #eee;
+    margin-bottom: 40px;
+}
+.hero-content {
+    height: 357px;
+    width: 422px;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.hero-content .title {
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10%;
+
+}
+.hero-content .subtitle {
+    font-size: 1.25em;
+}
+.hero-content .dark {
+    flex-grow: 0;
+    height: 60px;
+    width: 200px;
+    font-size: 1em;
+}
+.browser {
+    margin: auto 0;
+    height: 480px;
+    width: 670px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+.browser-btn {
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    padding: 3px;
+    margin-left: 6px;
+}
+/************************************/
+#hero-2.hero {
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+#hero-2 .hero-content {
+    align-items: center;
+    height: 224px;
+    width: 787px;
+    margin-top: 8%;
+}
+#hero-2 .hero-content .title {
+    text-align: center;
+    margin-bottom: 0;
+}
+#hero-2 .hero-content .subtitle {
+    text-align: center;
+    width: 600px;
+}
+#hero-2 .hero-content .dark {
+    align-self: center;
+    width: 240px;
+}
+#hero-2 .browser {
+    margin-bottom: -160px;
+    width: 800px;
+}
+/************************************/
+#hero-3 .hero-content {
+    align-items: center;
+    width: 787px;
+    height: 50%;
+    justify-content: space-around;
+}
+#hero-3 .hero-content .title {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 4em;
+}
+#hero-3 .hero-content .subtitle {
+    text-align: center;
+    width: 440px;
+}
+#hero-3 .hero-content .dark {
+    width: 280px;
+    height: 64px;
+}
 
