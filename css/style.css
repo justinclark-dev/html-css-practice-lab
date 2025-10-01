@@ -584,3 +584,122 @@ a span.carrot {
 .features-right .features {
     flex-direction: row-reverse;
 }
+/************************************/
+/* CTA */
+.figma-container:has(> .cta) {
+    background-color: #fff;
+}
+.cta {
+    height: 500px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    justify-content: space-around;
+}
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 243px;
+    width: 422px;
+}
+.cta-content .title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.cta-content .subtitle {
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 1em;
+}
+.cta-content button {
+    height: 60px;
+    width: 200px;
+    font-size: 1.1em;
+}
+/************************************/
+#cta-2 {
+    height: 240px;
+}
+#cta-2 .cta-content {
+    height: 90px;
+    width: 307px;
+}
+#cta-2 .cta-content .title {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+#cta-2 .cta-content .subtitle {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+#cta-2 .cta-buttons {
+
+    display: flex;
+    gap: 20px;
+}
+#cta-2 .cta-buttons button {
+    font-size: 1em;
+    height: 48px;
+    width: 200px;
+}
+/************************************/
+#cta-3 {
+    height: 568px;
+}
+#cta-3 input {
+    height: 64px;
+    width: 360px;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding-left: 2em;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    /*
+    The box-sizing property allows us to include the padding 
+    and border in an element's total width and height.
+    https://www.w3schools.com/csS/css3_box-sizing.asp
+    */
+    margin-bottom: 0.6em;
+}
+#cta-3 button {
+    height: 64px;
+    width: 360px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 0.5em;
+}
+#cta-3 .title {
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 2.2em;
+}
+
+/************************************/
+.section,
+#buttons-and-cards,
+#navigation,
+#hero,
+#social,
+#features,
+#cta
+{
+    /* display: none; */
+}
+
+/************************************/
+/* Footer */
+.footer {
+    height: 380px;
+}
+#footer-2 {
+    height: 410px;
+}
+#footer-3 {
+    height: 380px;
+}
