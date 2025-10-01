@@ -233,7 +233,7 @@ a span.carrot {
     justify-content: flex-end;
 }
 /************************************/
-/* Hero Section */
+/* Hero */
 .figma-container:has(> .hero) {
     /*
     parentSelector:has(> childSelector)
@@ -339,7 +339,7 @@ a span.carrot {
     height: 64px;
 }
 /************************************/
-/* Social Proof Section */
+/* Social Proof */
 .figma-container:has(> .social) {
     /*
     parentSelector:has(> childSelector)
@@ -426,11 +426,166 @@ a span.carrot {
     margin-bottom: 2em; 
 }
 /************************************/
+/* Features Left */
+.figma-container:has(> .features) {
+    /*
+    parentSelector:has(> childSelector)
+    https://developer.mozilla.org/en-US/docs/Web/CSS/:has
+    */
+    background-color: #fff;
+}
+#features {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+#features .features {
+    display: flex;
+    background-color: #eee;
+    justify-content: space-between;
+    align-items: center;
+}
+#features .content {
+    height: 243px;
+    width: 422px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#features .title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+#features .subtitle {
+    font-size: 1.3em;
+    width: 422px;
+}
+#features button {
+    font-size: 1em;
+    height: 60px;
+    width: 200px;
+}
+.features .media {
+    height: 600px;
+    width: 720px;
+    display: flex;
+}
+.features .media-background {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+.features .media-object {
+    height: 360px;
+    width: 320px;
+    border-radius: 4px;
+}
+/************************************/
+#features-2.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+}
+#features-2 .content {
+    height: 315px;
+    width: 457px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#features-2 .title {
+    font-size: 1.3em;
+}
+#features-2 .subtitle {
+    margin-top: 1.2em;
+    margin-bottom: 1.4em;
+}
+#features-2 .media-object {
+    height: 360px;
+    width: 480px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+#features-2 ul {
+    font-size: 1.4em;
+    margin-left: -40px;    
+}
+#features-2 li {
+    padding-bottom: 1em;
+}
+/************************************/
+#features-3.features {
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+#features-3 .content {
+    width: 472px;
+    height: 258px;
+    margin: 0;
+}
+#features-3 .title {
+    font-weight: 500;
+    font-size: 1.8em;
+}
+#features-3 .subtitle {
+
+    font-size: 1.05em;
+}
+#features-3 .customer-container {
+    display: flex;
+}
+#features-3 .customer-quote {
+    color: #888;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+#features-3 .customer-info {
+    align-self: center;
+    margin-left: 8px;
+}
+#features .logos {
+    width: 24px;
+    height: 24px;
+}
+#features .logo {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+#features-3 .media {
+    height: 286px;
+    width: 491px;
+    position: relative;
+}
+#features-3 .media-1, 
+#features-3 .media-2 {
+    width: 400px;
+    height: 232px;
+    position: absolute;
+}
+#features-3 .media-1 {
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+#features-3 .media-2 {
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/************************************/
 .section,
 #buttons-and-cards,
 #navigation,
 #hero,
-#social 
+#social
 {
     /* display: none; */
 }
