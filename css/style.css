@@ -579,13 +579,8 @@ a span.carrot {
     right: 0;
     z-index: 0;
 }
-
 /************************************/
-.section,
-#buttons-and-cards,
-#navigation,
-#hero,
-#social
-{
-    /* display: none; */
+/* Features Right */
+.features-right .features {
+    flex-direction: row-reverse;
 }
